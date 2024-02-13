@@ -46,6 +46,12 @@ li {
   padding: 0 40px;
 }
 
+.skill-inner{
+  max-width: 40%;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
 /*--------------------------------
  見出し
 ---------------------------------*/
@@ -217,15 +223,15 @@ li {
 .skill-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   margin-bottom: -50px;
 }
 
 .skill-item {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
-  width: 48%;
+  width: 20%;
   margin-bottom: 50px;
 }
 
