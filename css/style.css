@@ -65,6 +65,11 @@ li {
   padding: 0 40px;
 }
 
+table, th, td {
+  border:1px solid #fff;
+  border-collapse: collapse;
+}
+
 /*--------------------------------
  見出し
 ---------------------------------*/
