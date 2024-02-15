@@ -16,6 +16,7 @@
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
   <link href="css/ress.css" media="all" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="css/stackeditstyle.css" />
   <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
   <link rel="shortcut icon" href="img/favicon.ico" />
   <link rel=”canonical” href=”URLが入る” />
@@ -53,29 +54,41 @@
 
       <article class="article">
         <div class="article-inner">
-          <h2 class="article-title">カジキvsクトゥルフ</h2>
+          <h1 class="article-title">カジキvsクトゥルフ</h2>
           <p class="article-img">
             <img src="img/KvsK_Titlelogo.png" alt="">
           </p>
+
+          <div class="stackedit">
+            <div class="stackedit__html">
+          <p><a href="https://github.com/Rzyue3/KvsK_Public">Github</a></p>
+          <p><a href="https://gameparade.creators-guild.com/works/1039">DL</a></p>
+          <h2 id="ゲーム概要">ゲーム概要</h2>
+          <p>カジキでクトゥルフを倒す、シュールなシューティングゲーム<br>
+          漁に出ていた漁船に襲いかかるクトゥルフの軍勢を、釣り上げたサバで捌きながら<br>
+          生き延びるゲームになってます</p>
+          <h2 id="コンセプト">コンセプト</h2>
+          <p>B級映画のようなシュールさが好きな人、クトゥルフの圧倒的な力を感じたい人に向けたゲーム</p>
+          <h2 id="アピールポイント">アピールポイント</h2>
+          <p>サバとカジキのモデリングはこだわりました。それらが撃った後も残るのが、推しポイントです。</p>
+          <h2 id="担当箇所">担当箇所</h2>
+          <p>このプロジェクトでは自分は主に、開発のスケジュール管理やモデルの導入確認、仕事の割り振りなどを行い<br>
+          プログラ厶では、遷移管理、カメラアニメーションの実装を行いました。</p>
+          <h3 id="遷移管理">遷移管理</h3>
+          <h4 id="ソースコード1"><a href="https://github.com/Rzyue3/KvsK_Public/blob/main/Assets/Member/Kikuchi/Scripts/Manager/SceneController.cs">ソースコード1</a></h4>
+          <h4 id="ソースコード2"><a href="https://github.com/Rzyue3/KvsK/blob/Dev/Assets/Member/Kikuchi/Scripts/Manager/FadeController.cs">ソースコード2</a></h4>
+          <p>シーン遷移ということもあり各場面でよく呼ばれる為、できるだけ呼び出しを簡略化し、汎用的に使いやすいように意識しながら実装しました。<br>
+          フェードとそれを呼ぶ処理には<code>UniTask</code>を用いて実装をすることによりスムーズな遷移を実現することができました。</p>
+          <h3 id="カメラアニメーション">カメラアニメーション</h3>
+          <p>ゲームシーンとボス戦シーンの開始時にカメラアニメーションを実装しています。<br>
+          これらは<code>Chinemachine</code>を用いてコードレスで実装することができました</p>
+          </div>
+          </div>
           <div class="article-body">
-            <p>
-              
-            </p>
-            <h3 class="article-info-title">URL</h3>
-            <p><a>github : </a><a href="https://github.com/Rzyue3/KvsK_Public" target="_blank" rel="noopener">https://github.com/KvsK<br></a></p>
-            <p><a>みんなのゲームパレード : </a><a href="https://gameparade.creators-guild.com/works/1039" target="_blank" rel="noopener">https://gameparade.creators-guild.com/works/1039</a></p>
-            <h3 class="article-info-title">ゲーム概要</h3>
-            <p>カジキでクトゥルフを倒す、シュールなシューティングゲーム</p>
-            <h3 class="article-info-title">コンセプト</h3>
-            <p>B級映画のようなシュールさが好きな人、クトゥルフの圧倒的な力を感じたい人に向けたゲーム</p>
-            <h3 class="article-info-title">アピールポイント</h3>
-            <p>サバとカジキのモデリングはこだわりました。それらが撃った後も残るのが、推しポイントです。</p>
-            <h3 class="article-info-title">担当箇所</h3>
-            <p>
-            </p>
+
           </div>
           <div class="home-link">
-            <a href="./#works">Works一覧へ</a>
+            <a href="./index.html#works">Works一覧へ</a>
           </div>
         </div>
       </article>
