@@ -46,6 +46,73 @@ li {
   display: none;
 }
 
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  flex: 0 0 33.33%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.carousel-control.prev {
+  left: 10px;
+}
+
+.carousel-control.next {
+  right: 10px;
+}
+
+.highlight-url {
+  color: red; /* 赤色で強調表示 */
+  font-weight: bold;
+  font-size: 20px; /* 大きな文字サイズで表示 */
+}
+
+.downloads h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.download-link {
+  font-size: 1.5em; /* 文字サイズを大きく */
+  margin: 10px 0;
+}
+
+.download-link a {
+  text-decoration: underline; /* 下線を追加 */
+  color: #0066cc; /* リンクの色を指定 */
+}
+
+.download-link a:hover {
+  color: #003399; /* ホバー時の色を指定 */
+}
+
 /*--------------------------------
  レイアウト
 ---------------------------------*/
@@ -268,22 +335,93 @@ table, th, td {
   margin-bottom: 3px;
 }
 
+/* Skillセクションのスタイルを調整 */
+.skill-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: #333;
+  border-radius: 10px;
+}
+
+.skill table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.skill th, .skill td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.skill th {
+  background-color: #333;
+  color: white;
+}
+
+.skill tr:hover {
+  background-color: #444;
+}
+
+.skill td {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .skill-inner {
+      padding: 60px 40px;
+  }
+
+  .skill th, .skill td {
+      padding: 20px;
+  }
+}
+
 /*--------------------------------
  About
 ---------------------------------*/
 .profile {
   display: flex;
-  flex-wrap: wrap;
-  max-width: 800px;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background-color: #333;
+  border-radius: 10px;
+  max-width: 1200px;
   margin: 0 auto;
 }
+
 .profile-img {
-  width: 20%;
-  margin-right: 30px;
+  flex: 1;
+  max-width: 200px;
+  margin-right: 20px;
+}
+
+.profile-img img {
+  width: 100%;
   border-radius: 50%;
 }
-.profile-img img {
-  border-radius: 50%;
+
+.profile-body {
+  flex: 2;
+  text-align: left;
+}
+
+.prof-text {
+  /* font-size: 1em; */
+  line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+  .profile {
+      padding: 60px 40px;
+  }
+
+  .prof-text {
+      font-size: 1.5em;
+  }
 }
 .profile-body {
   flex: 1;
@@ -294,7 +432,7 @@ table, th, td {
 
 .prof-text{
   font-size: 15px;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 /*--------------------------------
