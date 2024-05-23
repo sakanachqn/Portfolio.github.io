@@ -61,7 +61,8 @@
 
           <div class="stackedit">
             <div class="stackedit__html">
-              <section class="downloads"></section>
+              <section class="downloads">
+                <h2>ダウンロード</h2>
           <p class="download-link"><a href="https://github.com/Rzyue3/KvsK_Public">Github</a></p>
           <p class="download-link"><a href="https://gameparade.creators-guild.com/works/1039">DL</a></p>
             </section>
@@ -69,6 +70,27 @@
           <p>カジキでクトゥルフを倒す、シュールなシューティングゲーム<br>
           漁に出ていた漁船に襲いかかるクトゥルフの軍勢を、釣り上げたサバで捌きながら<br>
           生き延びるゲームになってます</p>
+          <h2 id="ゲーム概要">ゲーム概要</h2>
+              <p>飛べないし壁もすり抜けられない <br> そんな物理に勝てないおばけで立ちふさがる落とし穴や障害物をスキルでどうにかしてゴールを目指すゲーム</p>
+              
+              <!-- 主要言語・主要ツール・開発人数・開発期間を追加 -->
+              <h2 id="主要言語・主要ツール">主要言語・主要ツール</h2>
+              <p>主要言語：C#</p>
+              <p>主要ツール：<br>Unity<br>GitHub<br>Microsoft Visual Studio 2022<br>UniTask<br>Chinemachine</p>
+              
+              <h2 id="開発人数">開発人数</h2>
+              <p>
+                プランナー５人<br>
+                プログラマー５人（＋メンター３人）<br>
+                3Dモデラー４人<br>
+                エフェクトデザイナー２人<br>
+                2Dデザイナー２人<br>
+                PV担当１人<br>
+                計２２人<br>
+              </p>
+              
+              <h2 id="開発期間">開発期間</h2>
+              <p>2023/4 ~ 2023/9</p>
           <h2 id="コンセプト">コンセプト</h2>
           <p>B級映画のようなシュールさが好きな人、クトゥルフの圧倒的な力を感じたい人に向けたゲーム</p>
           <h2 id="アピールポイント">アピールポイント</h2>
@@ -77,8 +99,8 @@
           <p>このプロジェクトでは自分は主に、開発のスケジュール管理やモデルの導入確認、仕事の割り振りなどを行い<br>
           プログラ厶では、遷移管理、カメラアニメーションの実装を行いました。</p>
           <h3 id="遷移管理">遷移管理</h3>
-          <h4 id="ソースコード1"><a href="https://github.com/Rzyue3/KvsK_Public/blob/main/Assets/Member/Kikuchi/Scripts/Manager/SceneController.cs">ソースコード1</a></h4>
-          <h4 id="ソースコード2"><a href="https://github.com/Rzyue3/KvsK/blob/Dev/Assets/Member/Kikuchi/Scripts/Manager/FadeController.cs">ソースコード2</a></h4>
+          <h4 class="download-link"><a href="https://github.com/Rzyue3/KvsK_Public/blob/main/Assets/Member/Kikuchi/Scripts/Manager/SceneController.cs">ソースコード1</a></h4>
+          <h4 class="download-link"><a href="https://github.com/Rzyue3/KvsK/blob/Dev/Assets/Member/Kikuchi/Scripts/Manager/FadeController.cs">ソースコード2</a></h4>
           <p>シーン遷移ということもあり各場面でよく呼ばれる為、できるだけ呼び出しを簡略化し、汎用的に使いやすいように意識しながら実装しました。<br>
           フェードとそれを呼ぶ処理には<code>UniTask</code>を用いて実装をすることによりスムーズな遷移を実現することができました。</p>
           <h3 id="カメラアニメーション">カメラアニメーション</h3>
